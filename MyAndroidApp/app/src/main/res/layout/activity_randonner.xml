@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RandonnerActivity">
+
+    <RelativeLayout
+        android:id="@+id/rando_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Rando_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Randonner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rando_header"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="155dp">
+
+        <Button
+            android:id="@+id/Return_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/Other_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decouvrir"
+            android:onClick="onClickDecouvrir"/>
+        <TextView
+            android:id="@+id/nom_rendo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/duree_rendo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/description_rendo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/img_rendo"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
