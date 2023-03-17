@@ -32,8 +32,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="195dp"
                 android:text="aide"
+                android:onClick="onHelpClick"
                 android:textColor="@color/white"
-                app:backgroundTint="#00FFFFFF" />
+                app:backgroundTint="#00FFFFFF"/>
         </LinearLayout>
 
 
@@ -41,28 +42,15 @@
 
     </RelativeLayout>
 
-    <TextView
-    android:id="@+id/text"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/map_header"
-    android:text="ICI MAP"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="200dp"/>
-
-    <RelativeLayout
-        android:id="@+id/footer"
+    <com.mapbox.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_below="@id/text"
-        android:layout_marginTop="360dp"
-        android:background="@color/black">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="Copyright ou Autre"
-            android:textColor="@color/white" />
-    </RelativeLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@id/map_header"
+        mapbox:mapbox_cameraTargetLat="47.653162"
+        mapbox:mapbox_cameraTargetLng="1.654667"
+        mapbox:mapbox_cameraZoom="4.5"
+        />
 </RelativeLayout>

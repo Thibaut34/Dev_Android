@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RandoApp</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoidGhpYjM0IiwiYSI6ImNsZmM4YmRuODM4M3UzdnIwbWYwbW15bjEifQ.Rgb_M5a4hkftBT0b-mcViQ</string>
 </resources>
